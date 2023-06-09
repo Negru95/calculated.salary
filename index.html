@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator de salarii</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator de salarii</h1>
+        <div class="input-group">
+            <label for="net">Salariu Net</label>
+            <input type="text" id="net" placeholder="Introduceți salariul net">
+        </div>
+        <div class="input-group">
+            <label for="brut">Salariu Brut</label>
+            <input type="text" id="brut" placeholder="Introduceți salariul brut">
+        </div>
+        <div class="buttons">
+            <button id="calcBrut">Calculează Brut</button>
+            <button id="calcNet">Calculează Net</button>
+        </div>
+    </div>
+
+    <div class="calculator-info">
+        <div class="calculation-info">
+            <h3>Calculează:</h3>
+            <ul>
+                <li>Salariu Net (salariul pe care îl primiți în mână)</li>
+                <li>Contribuțiile plătite de angajator și angajat în România</li>
+            </ul>
+            <h3>Utilizare:</h3>
+            <ul>
+                <li>Introduceți în partea din stânga salariul brut și calculați salariul net</li>
+                <li>Selectați anul pentru care doriți să calculați</li>
+                <li>Pentru un calculator de salarii detaliat, apăsați pe butonul "Calculator avansat". Aici veți putea introduce și salariul complet - însemnând cât plătește firma pentru plata unui salariu.</li>
+                <li>Puteți descărca rezultatul în format PDF sau să-l tipăriți.</li>
+            </ul>
+        </div>
+
+        <h2>Calcul Salariu 2023:</h2>
+        <p>Actualizat pentru anul 2023.</p>
+        <h3>Contribuții Angajat</h3>
+        <ul>
+            <li>Asigurări Sociale (CAS) - 25%</li>
+            <li>Asigurări Sociale de Sănătate (CASS) - 10%</li>
+            <li>Deducere Personală (DP)</li>
+            <li>Impozit pe Venit (IV) - 10%</li>
+        </ul>
+
+        <h3>Contribuții Angajator</h3>
+        <ul>
+            <li>Contribuție Asigurătorie pentru Muncă (CAM) - 2.25%</li>
+        </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
+</body>
+</html>
