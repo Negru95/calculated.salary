@@ -183,3 +183,24 @@
     }
   }
   
+  /* Media queries pentru telefoane Samsung */
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
+    .calculator {
+      width: 80%;
+    }
+  }
+  
+  /* Media queries pentru iPhone */
+  @media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    .calculator {
+      width: 80%;
+    }
+  }
+  
+  /* Media queries pentru Huawei */
+  @media screen and (device-width: 360px) and (device-height: 760px) and (-webkit-device-pixel-ratio: 3) {
+    .calculator {
+      width: 80%;
+    }
+  }
+  
