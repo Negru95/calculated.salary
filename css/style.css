@@ -13,6 +13,9 @@
     background-size: 400% 400%;
     animation: cameleonBackground 15s ease infinite;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
   
   h1, h2, h3, p {
@@ -20,6 +23,12 @@
   }
   
   /* Calculator */
+  .calculator-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .calculator {
     width: 90%;
     max-width: 400px;
