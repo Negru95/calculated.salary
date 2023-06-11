@@ -12,6 +12,7 @@
     background-image: linear-gradient(45deg, #FFC593, #E775FF, #C4FFD4, #FDCB6E);
     background-size: 400% 400%;
     animation: cameleonBackground 15s ease infinite;
+    font-family: Arial, sans-serif;
   }
   
   h1, h2, h3, p {
@@ -32,6 +33,7 @@
   .calculator h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 24px;
   }
   
   .calculator .input-group {
@@ -50,6 +52,7 @@
     padding: 5px;
     border-radius: 8px;
     border: 1px solid #cccccc;
+    font-size: 16px;
   }
   
   .calculator .buttons {
@@ -99,6 +102,7 @@
   .calculator-info h2 {
     margin-top: 0;
     margin-bottom: 20px;
+    font-size: 20px;
   }
   
   .calculator-info .calculation-info {
@@ -127,14 +131,46 @@
     }
   }
   
-  /* Media queries pentru ecrane mai mari */
-  @media screen and (min-width: 768px) {
+  /* Media queries pentru ecrane mai mici */
+  @media screen and (max-width: 767px) {
     .calculator {
-      margin-right: 20px;
+      padding: 20px;
+    }
+  
+    .calculator h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .calculator .input-group label {
+      font-size: 14px;
+    }
+  
+    .calculator .input-group input {
+      height: 32px;
+      font-size: 14px;
+    }
+  
+    .calculator .buttons {
+      flex-direction: column;
+    }
+  
+    .calculator .buttons button {
+      width: 100%;
+      height: 36px;
+      font-size: 14px;
+      margin: 5px 0;
     }
   
     .calculator-info {
-      margin-left: 20px;
+      padding: 20px;
+    }
+  
+    .calculator-info h2,
+    .calculator-info h3,
+    .calculator-info ul,
+    .calculator-info p {
+      font-size: 14px;
     }
   }
   
