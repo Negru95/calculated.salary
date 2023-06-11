@@ -1,4 +1,9 @@
-body {
+/* Stiluri de bază */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,154 +12,55 @@ body {
     background-image: linear-gradient(45deg, #FFC593, #E775FF, #C4FFD4, #FDCB6E);
     background-size: 400% 400%;
     animation: cameleonBackground 15s ease infinite;
-}
-
-.calculator {
-    width: 400px;
-    max-width: 90%;
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    padding: 40px;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 40px;
-    margin-right: 20px;
-}
-
-.calculator h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  }
+  
+  h1, h2, h3, p {
     color: #555555;
-}
-
-.calculator .input-group {
-    margin-bottom: 20px;
-}
-
-.calculator .input-group label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #555555;
-}
-
-.calculator .input-group input {
-    width: 100%;
-    height: 40px;
-    padding: 5px;
-    border-radius: 8px;
-    border: 1px solid #cccccc;
-}
-
-.calculator .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.calculator .buttons button {
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
-}
-
-.calculator .buttons button#calcBrut {
-    background-color: #e35f5f;
-    color: #ffffff;
-}
-
-.calculator .buttons button#calcNet {
-    background-color: #7c5295;
-    color: #ffffff;
-}
-
-.calculator .buttons button:hover {
-    transform: scale(1.1);
-}
-
-.calculator-info {
-    width: 400px;
-    max-width: 90%;
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    padding: 40px;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
-
-.calculator-info h2,
-.calculator-info h3,
-.calculator-info ul,
-.calculator-info p {
-    color: #555555;
-}
-
-.calculatobody {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f1f1f1;
-    background-image: linear-gradient(45deg, #FFC593, #E775FF, #C4FFD4, #FDCB6E);
-    background-size: 400% 400%;
-    animation: cameleonBackground 15s ease infinite;
-}
-
-.calculator {
+  }
+  
+  /* Calculator */
+  .calculator {
     width: 90%;
     max-width: 400px;
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     padding: 40px;
-    position: relative;
-    z-index: 1;
     margin-bottom: 40px;
-}
-
-.calculator h1 {
+  }
+  
+  .calculator h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #555555;
-}
-
-.calculator .input-group {
+  }
+  
+  .calculator .input-group {
     margin-bottom: 20px;
-}
-
-.calculator .input-group label {
+  }
+  
+  .calculator .input-group label {
     display: block;
     font-size: 16px;
     margin-bottom: 5px;
-    color: #555555;
-}
-
-.calculator .input-group input {
+  }
+  
+  .calculator .input-group input {
     width: 100%;
     height: 40px;
     padding: 5px;
     border-radius: 8px;
     border: 1px solid #cccccc;
-}
-
-.calculator .buttons {
+  }
+  
+  .calculator .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
-}
-
-.calculator .buttons button {
+  }
+  
+  .calculator .buttons button {
     width: 150px;
     height: 40px;
     font-size: 16px;
@@ -163,107 +69,72 @@ body {
     cursor: pointer;
     margin: 5px;
     transition: transform 0.3s ease;
-}
-
-.calculator .buttons button#calcBrut {
+  }
+  
+  .calculator .buttons button#calcBrut {
     background-color: #e35f5f;
     color: #ffffff;
-}
-
-.calculator .buttons button#calcNet {
+  }
+  
+  .calculator .buttons button#calcNet {
     background-color: #7c5295;
     color: #ffffff;
-}
-
-.calculator .buttons button:hover {
+  }
+  
+  .calculator .buttons button:hover {
     transform: scale(1.1);
-}
-
-.calculator-info {
+  }
+  
+  /* Calculator info */
+  .calculator-info {
     width: 90%;
     max-width: 400px;
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     padding: 40px;
-    position: relative;
-    z-index: 1;
     margin-bottom: 40px;
-}
-
-.calculator-info h2,
-.calculator-info h3,
-.calculator-info ul,
-.calculator-info p {
-    color: #555555;
-}
-
-.calculator-info h2 {
+  }
+  
+  .calculator-info h2 {
     margin-top: 0;
     margin-bottom: 20px;
-}
-
-.calculator-info .calculation-info {
+  }
+  
+  .calculator-info .calculation-info {
     margin-bottom: 20px;
-}
-
-.calculator-info ul {
+  }
+  
+  .calculator-info ul {
     margin-bottom: 20px;
     padding-left: 20px;
-}
-
-.calculator-info li {
+  }
+  
+  .calculator-info li {
     margin-bottom: 5px;
-}
-
-@keyframes cameleonBackground {
+  }
+  
+  /* Background animation */
+  @keyframes cameleonBackground {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%;
+      background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
-}
-
-@media screen and (min-width: 768px) {
-    /* Stiluri pentru ecrane de dimensiuni mai mari (tablete, desktop) */
+  }
+  
+  /* Media queries pentru ecrane mai mari */
+  @media screen and (min-width: 768px) {
     .calculator {
-        margin-right: 20px;
+      margin-right: 20px;
     }
-
+  
     .calculator-info {
-        margin-left: 20px;
+      margin-left: 20px;
     }
-}
-r-info h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.calculator-info .calculation-info {
-    margin-bottom: 20px;
-}
-
-.calculator-info ul {
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
-
-.calculator-info li {
-    margin-bottom: 5px;
-}
-
-@keyframes cameleonBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+  }
+  
