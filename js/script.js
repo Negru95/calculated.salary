@@ -71,7 +71,7 @@ function calculateCASS(salary) {
 function calculateDP(salary) {
     var dp = 510;
     if (salary > 3000) {
-        dp -= (salary - 3000) / 6;
+        dp -= (salary - 3000) * (0.1/6);
         if (dp < 0) {
             dp = 0;
         }
