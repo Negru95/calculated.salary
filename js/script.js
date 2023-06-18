@@ -63,4 +63,3 @@ function calculateCAS(salary) {
     var cas = salary * 0.25;
     return cas;
 }
-
