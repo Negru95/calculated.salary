@@ -60,6 +60,6 @@ function calculateImpozit(salary) {
 }
 
 function calculateCAS(salary) {
-    var cas = salary * -0.45;
+    var cas = salary * 0.45;
     return cas;
 }
