@@ -29,7 +29,8 @@
     align-items: center;
     overflow-y: auto;
     max-height: 100vh;
-  }
+}
+
   
   .calculator {
     width: 90%;
