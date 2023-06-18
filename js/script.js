@@ -22,9 +22,11 @@ function calculateBrut() {
         return;
     }
 
-    var impozit = calculateImpozit(netSalary);
     var cas = calculateCAS(netSalary);
-    var brutSalary = netSalary + impozit + cas;
+    var cass = calculateCASS(netSalary);
+    var dp = calculateDP(netSalary);
+    var impozit = calculateImpozit(netSalary);
+    var brutSalary = netSalary + cas + cass + dp + impozit;
 
     brutInput.value = brutSalary.toFixed(2);
 }
@@ -41,9 +43,11 @@ function calculateNet() {
         return;
     }
 
-    var impozit = calculateImpozit(brutSalary);
     var cas = calculateCAS(brutSalary);
-    var netSalary = brutSalary - impozit - cas;
+    var cass = calculateCASS(brutSalary);
+    var dp = calculateDP(brutSalary);
+    var impozit = calculateImpozit(brutSalary);
+    var netSalary = brutSalary - cas - cass - dp - impozit;
 
     netInput.value = netSalary.toFixed(2);
 }
@@ -54,13 +58,28 @@ function restrictInputToNumbers(event) {
     input.value = sanitizedValue;
 }
 
-function calculateImpozit(salary) {
-    var impozit = salary * 0.1;
-    return impozit;
-}
-
 function calculateCAS(salary) {
-    var cas = salary * 0.45;
+    var cas = salary * 0.25;
     return cas;
 }
 
+function calculateCASS(salary) {
+    var cass = salary * 0.10;
+    return cass;
+}
+
+function calculateDP(salary) {
+    var dp = 510;
+    if (salary > 3000) {
+        dp -= (salary - 3000) / 6;
+        if (dp < 0) {
+            dp = 0;
+        }
+    }
+    return dp;
+}
+
+function calculateImpozit(salary) {
+    var impozit = salary * 0.10;
+    return impozit;
+}
